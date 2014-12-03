@@ -3,6 +3,7 @@ html,body {
   padding:0;
   height:100%;
   width:100%;
+  font-family: 'Raleway', sans-serif;
  
 }
 
@@ -18,7 +19,7 @@ html,body {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-weight: normal;
-	font-family: "BebasNeue", "league-gothic", arial, verdana, sans-serif;
+
 	text-transform: uppercase;
 	text-align:center;
 }
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
 	font-size:48px;
 	color:white;
-	font-family: "BebasNeue", "league-gothic", arial, verdana, sans-serif;
+
 
 font-weight: normal;
 }
