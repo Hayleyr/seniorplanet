@@ -65,18 +65,6 @@ $.getJSON('sites2.geojson', function(data){
 
 
 
-var baseLayers = {
-    "Mapbox": mapbox,
-    "OpenStreetMap": osm
-};
-
-var overlays = {
-    "Marker": marker,
-    "Roads": roadsLayer
-};
-
-L.control.layers(baseLayers, overlays).addTo(map);
-
 
 
 
