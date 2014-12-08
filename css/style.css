@@ -8,12 +8,11 @@ html,body {
 }
 
 .leaflet-popup-content-wrapper {
-background: #e3312b !important;
-opacity: .8 !important;
+background: rgba(227, 49, 43, 0.7) !important;
 box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 color: white !important;
 width:300px !important;
-height:250px !important;
+height:300px !important;
 text-align:center !important;
 
 }
