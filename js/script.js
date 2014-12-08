@@ -20,13 +20,21 @@ L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roadsg/x={x}&y={y}&z={z}', {
    	  $('#splash').fadeOut();
     }
   });
+  L.geoJson(data, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.description);
+    }
+}).addTo(map);
 
 
 
 
 
 
-function makeMarkers(feature, layer){
+function bindPopups(feature, layer){
 	//console.log(feature);
 	layer.bindPopup(
 		feature.properties.Site
@@ -46,7 +54,7 @@ function makeMarkers(feature, layer){
 $.getJSON('sites2.geojson', function(data){
 	//console.log(data);
 	L.geoJson(data.features, {  //use leaflet's functionality to grab geoJSON features
-		onEachFeature: makeMarkers
+		onEachFeature: bindPopups
 	}).addTo(map);  //add to map
 });
 
