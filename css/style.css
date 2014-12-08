@@ -9,10 +9,12 @@ html,body {
 
 .leaflet-popup-content-wrapper {
 background: #e3312b !important;
+opacity: .8 !important;
 box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 color: white !important;
-width:200px;
-height:200px;
+width:300px !important;
+height:250px !important;
+text-align:center !important;
 
 }
 .leaflet-popup-content {
