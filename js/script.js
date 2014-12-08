@@ -20,14 +20,7 @@ L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roadsg/x={x}&y={y}&z={z}', {
    	  $('#splash').fadeOut();
     }
   });
-  L.geoJson(data, {
-    style: function (feature) {
-        return {color: feature.properties.color};
-    },
-    onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.description);
-    }
-}).addTo(map);
+ 
 
 
 
