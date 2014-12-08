@@ -63,6 +63,23 @@ $.getJSON('sites2.geojson', function(data){
 	}).addTo(map);  //add to map
 });
 
+var active = new L.LayerGroup();
+
+	    L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.').addTo(active),
+	var myIcon = L.icon({
+    iconUrl: 'img/computers.png',
+    iconRetinaUrl: 'my-icon@2x.png',
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+    shadowUrl: 'my-icon-shadow.png',
+    shadowRetinaUrl: 'my-icon-shadow@2x.png',
+    shadowSize: [68, 95],
+    shadowAnchor: [22, 94]
+});
+
+L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+
 
 
 
