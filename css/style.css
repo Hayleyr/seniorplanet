@@ -17,14 +17,19 @@ html,body {
 
 }
 .square {
-	width:200px;
+	width:300px;
 	float:left;
+
 }
 #square1 {
 	background-color:#F0D318;
+	padding:10px;
+	font-size:18px;
 }
 #square2 {
 	background-color:#575757;
+	padding:10px;
+	font-size:18px;
 }
 
 .title {
