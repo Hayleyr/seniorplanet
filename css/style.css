@@ -11,6 +11,10 @@ html,body {
 	margin:20px;
 	padding:20px;
 }
+.footer {
+	width:80%;
+	height:20vh;
+}
 
 .title {
 
