@@ -13,11 +13,18 @@ html,body {
 }
 .footer {
 	width:80%;
+	  margin:0px auto;
 
 }
 .square {
-	width:150px;
+	width:200px;
 	float:left;
+}
+#square1 {
+	background-color:#F0D318;
+}
+#square2 {
+	background-color:#575757;
 }
 
 .title {
