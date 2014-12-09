@@ -12,12 +12,12 @@ html,body {
 	padding:20px;
 }
 .footer {
-	width:80%;
+	width:74%;
 	  margin:0px auto;
 
 }
 .square {
-	width:260px;
+	width:270px;
 	float:left;
 
 }
@@ -25,15 +25,15 @@ html,body {
 	background-color:#F0D318;
 	padding:10px;
 	font-size:18px;
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:70px;
+	padding-bottom:70px;
 }
 #square2 {
 	background-color:#575757;
 	padding:10px;
 	font-size:18px;
-		padding-top:60px;
-	padding-bottom:60px;
+		padding-top:70px;
+	padding-bottom:70px;
 }
 
 .title {
