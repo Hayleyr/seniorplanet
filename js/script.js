@@ -39,6 +39,7 @@ function bindPopups(feature, layer){
 		+ feature.properties.Email
 		+ "<br/><strong>Address:</strong> "
 		+ feature.properties.Address
+			+ "<br/><strong>Website:</strong> "
 
 	);
 }
