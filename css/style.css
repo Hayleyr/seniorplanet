@@ -10,6 +10,7 @@ html,body {
 #header {
 	margin:20px;
 	padding:20px;
+	width:80%;
 }
 .footer {
 	width:79%;
@@ -42,13 +43,13 @@ html,body {
 
 	border-radius:7px;
 	width:500px;
-	margin:0px auto;
+
 	padding:20px;
-	margin-top:30px;
- margin:0px auto;
+
+
  background:#575757;
  color:#F0D318;
- float:right;
+ float:left;
 }
 
 .logo {
