@@ -26,7 +26,7 @@ html,body {
 
 
 }
-#square4 {
+.square4 {
 
     background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
 }
@@ -34,14 +34,22 @@ html,body {
 #element:hover {
     background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
 }
-#square1 {
+.square3 {
+
+    background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
+}
+
+#element:hover {
+    background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
+}
+.square1 {
 	background-color:#F0D318;
 	padding:10px;
 	font-size:18px;
 	padding-top:20px;
 	padding-bottom:20px;
 }
-#square2 {
+.square2 {
 	background-color:#575757;
 	padding:10px;
 	font-size:18px;
