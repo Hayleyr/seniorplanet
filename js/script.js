@@ -3,7 +3,7 @@ var map = L.map('map')
 
 
 //set up basemap tiles from mapbox
-L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roadsg/x={x}&y={y}&z={z}', {
+L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
 
