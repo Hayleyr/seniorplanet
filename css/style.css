@@ -11,6 +11,7 @@ html,body {
 	margin:20px;
 	padding:20px;
 	width:80%;
+	margin:0px auto;
 }
 .footer {
 	width:79%;
@@ -53,9 +54,9 @@ html,body {
 }
 
 .logo {
-	margin-left:80px;
+
 	float:left;
-	margin-bottom:20px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
