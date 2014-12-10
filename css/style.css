@@ -26,6 +26,15 @@ html,body {
 
 
 }
+#square4 {
+    width: 100px; /* width of image */
+    height: 200px; /* height of image */
+    background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
+}
+
+#element:hover {
+    background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
+}
 #square1 {
 	background-color:#F0D318;
 	padding:10px;
