@@ -21,8 +21,10 @@ html,body {
 
 .square4 {
 
-    background-image: url("http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg");
+    background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
     display:block;
+    width:200px;
+    height:200px;
 }
 
 .square4:hover {
