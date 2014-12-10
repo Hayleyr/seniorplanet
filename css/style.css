@@ -34,6 +34,10 @@ html,body {
 .square2 {
 
     background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
+     display:block;
+    width:400px;
+    height:400px;
+    background-size:cover;
 }
 
 .square2:hover {
