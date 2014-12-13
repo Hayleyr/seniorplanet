@@ -20,6 +20,16 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
    	  $('#splash').fadeOut();
     }
   });
+  var myIcon = L.icon({
+    iconUrl: 'img/computers.png',
+    //shadowUrl: 'leaf-shadow.png',
+
+    iconSize:     [32, 37], // size of the icon
+    shadowSize:   [51, 37], // size of the shadow
+    iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
  
 
 //L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
@@ -83,7 +93,21 @@ function helloThere (feature,layer){
 
 function addMarkers (feature, latlng) {
 	console.log(data);
-}
+	return L.circleMarker(latlng, {
+			icon: myIcon,
+					/*radius: 4,
+				
+					color: "#000",
+					weight: 1,
+				
+					fillOpacity: 0.8,
+					fillColor: getColor(feature.properties.PCC)*/
+				});
+			}
+  }).addTo(map);
+	
+
+
 	/*	return L.circleMarker(latlng, {
 					radius: 4,
 				
