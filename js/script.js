@@ -91,7 +91,7 @@ function helloThere (feature,layer){
 	addMarkers (feature,layer);
 }
 
-var marker {
+var marker = {
 		radius: 4,
 				
 		color: "#000",
