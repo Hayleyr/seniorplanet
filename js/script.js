@@ -71,19 +71,15 @@ $.getJSON('sites2.geojson',function(data){
 			console.log(data);
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
-		onEachFeature: bindPopups
+		onEachFeature: helloThere
 	}).addTo(map);  
 });
 
-  L.geoJson(data.features, {  //use leaflet's functionality to grab geoJSON features
-    onEachFeature: setupMarkersAndIcons
-  }).addTo(map);  //add to map
-});
-
-function setupMarkersAndIcons(feature, layer){
-   makeMarkers(feature, layer);
-   makeIcons(feature, layer);
+function helloThere (feature,layer){
+	bindPopups(feature, layer);
 }
+
+ 
 
 
 
