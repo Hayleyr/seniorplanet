@@ -103,8 +103,7 @@ function addMarkers (feature, latlng) {
 					fillOpacity: 0.8,
 					fillColor: getColor(feature.properties.PCC)*/
 				});
-			}
-  }).addTo(map);
+			}).addTo(map);
 	
 
 
