@@ -39,7 +39,7 @@ var myIcon = L.icon({
 					Icon: GetIcon(feature.properties.PCC)
 				});
 			}
-  }).addTo(map);
+ // }).addTo(map);
  
   
 
