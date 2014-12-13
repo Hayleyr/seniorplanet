@@ -31,7 +31,7 @@ var myIcon = L.icon({
     shadowSize: [68, 95],
     shadowAnchor: [22, 94]
 });
-/*L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+//L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
    pointToLayer: function (feature, latlng) {
 				return L.Icon(latlng, {
@@ -40,7 +40,7 @@ var myIcon = L.icon({
 				});
 			}
   }).addTo(map);
-  */
+ 
   
 
 
