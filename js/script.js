@@ -34,7 +34,7 @@ var myIcon = L.icon({
 //L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
    pointToLayer: function (feature, latlng) {
-				return L.Icon(latlng, {
+				return L.Icon(latlng) {
 				
 					Icon: GetIcon(feature.properties.PCC)
 				});
