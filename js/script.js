@@ -101,7 +101,7 @@ var marker = {
 		fillColor: 'red'
 }
 function addMarkers (feature, latlng){ 
-	console.log(data)
+	console.log(data);
 
 	return L.circleMarker(latlng, marker).addTo(map);
 }
