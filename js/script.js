@@ -77,7 +77,28 @@ $.getJSON('sites2.geojson',function(data){
 
 function helloThere (feature,layer){
 	bindPopups(feature, layer);
+	console.log(data);
 }
+
+/*function addMarkers (feature, latlng) {
+		return L.circleMarker(latlng, {
+					radius: 4,
+				
+					color: "#000",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.8,
+					fillColor: getColor(feature.properties.PCC)
+				});
+			}
+  }).addTo(map);
+
+	function getColor(d) {			return d == "null" ? '#218282' :
+			       d == "PCC"  ? '#FF3300' :
+			     
+			       	                  '#eff3ff';
+		
+}*/
 
  
 
