@@ -94,14 +94,14 @@ function helloThere (feature,layer){
 function addMarkers (feature, latlng) {
 	console.log(data);
 	return L.circleMarker(latlng, {
-			icon: myIcon,
-					/*radius: 4,
+		
+				radius: 4,
 				
 					color: "#000",
 					weight: 1,
 				
 					fillOpacity: 0.8,
-					fillColor: getColor(feature.properties.PCC)*/
+					fillColor: 'red'
 				});
 			}).addTo(map);
 	
