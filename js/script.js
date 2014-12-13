@@ -77,11 +77,13 @@ $.getJSON('sites2.geojson',function(data){
 
 function helloThere (feature,layer){
 	bindPopups(feature, layer);
-	console.log(data);
+	
+	addMarkers (feature,layer);
 }
 
-/*function addMarkers (feature, latlng) {
-		return L.circleMarker(latlng, {
+function addMarkers (feature, latlng) {
+	console.log(data);
+	/*	return L.circleMarker(latlng, {
 					radius: 4,
 				
 					color: "#000",
@@ -90,7 +92,7 @@ function helloThere (feature,layer){
 					fillOpacity: 0.8,
 					fillColor: getColor(feature.properties.PCC)
 				});
-			}
+			}*/
   }).addTo(map);
 
 	function getColor(d) {			return d == "null" ? '#218282' :
