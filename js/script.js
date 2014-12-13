@@ -103,6 +103,7 @@ var marker = {
 function addMarkers (feature, latlng){ 
 
 	return L.circleMarker(latlng, marker).addTo(map);
+}
 	
 
 
