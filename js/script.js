@@ -1,4 +1,4 @@
-var map = L.map('map')
+*/var map = L.map('map')
 	.setView([40.7109417, -74.0061738], 11);
 
 
@@ -74,6 +74,20 @@ $.getJSON('sites2.geojson',function(data){
 		onEachFeature: bindPopups
 	}).addTo(map);  
 });
+
+  L.geoJson(data.features, {  //use leaflet's functionality to grab geoJSON features
+    onEachFeature: setupMarkersAndIcons
+  }).addTo(map);  //add to map
+});
+
+function setupMarkersAndIcons(feature, layer){
+   makeMarkers(feature, layer);
+   makeIcons(feature, layer);
+}
+
+
+
+
 
     //onEachFeature: makeMarkers,
    /* pointToLayer: function (feature, latlng) {
