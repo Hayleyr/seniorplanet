@@ -21,16 +21,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
     }
   });
  
-var myIcon = L.icon({
-    iconUrl: 'img/computers.png',
-  
-    iconSize: [38, 95],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
 
-    shadowSize: [68, 95],
-    shadowAnchor: [22, 94]
-});
 //L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
  /*  pointToLayer: function (feature, latlng) {
@@ -45,7 +36,7 @@ var myIcon = L.icon({
   
 
 
-function GetIcon(d){if(d != null) {myIcon}}
+//function GetIcon(d){if(d != null) {myIcon}}
 
 
 
@@ -80,6 +71,7 @@ $.getJSON('sites2.geojson',function(data){
 			console.log(data);
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
+		onEachFeature: bindPopups
 
     //onEachFeature: makeMarkers,
     pointToLayer: function (feature, latlng) {
