@@ -67,7 +67,9 @@ function bindPopups(feature, layer){
 
 
 $.getJSON('sites2.geojson', function(data){
-	//console.log(data);
+
+	console.log(data);
+	window.data = data;
 	L.geoJson(data.features, {  //use leaflet's functionality to grab geoJSON features
 		onEachFeature: bindPopups
 	}).addTo(map);  //add to map
