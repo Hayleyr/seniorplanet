@@ -83,6 +83,7 @@ function helloThere (feature,layer){
 
 function addMarkers (feature, latlng) {
 	console.log(data);
+}
 	/*	return L.circleMarker(latlng, {
 					radius: 4,
 				
