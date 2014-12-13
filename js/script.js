@@ -92,7 +92,7 @@ function addMarkers (feature, latlng) {
 					fillOpacity: 0.8,
 					fillColor: getColor(feature.properties.PCC)
 				});
-			}*/
+			}
   }).addTo(map);
 
 	function getColor(d) {			return d == "null" ? '#218282' :
