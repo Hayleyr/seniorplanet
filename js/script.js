@@ -91,19 +91,18 @@ function helloThere (feature,layer){
 	addMarkers (feature,layer);
 }
 
-function addMarkers (feature, latlng) {
-	console.log(data);
-	return L.circleMarker(latlng, {
-		
-				radius: 4,
+var marker {
+		radius: 4,
 				
-					color: "#000",
-					weight: 1,
+		color: "#000",
+		weight: 1,
 				
-					fillOpacity: 0.8,
-					fillColor: 'red'
-				});
-			}).addTo(map);
+		fillOpacity: 0.8,
+		fillColor: 'red'
+}
+function addMarkers (feature, latlng){ 
+
+	return L.circleMarker(latlng, marker).addTo(map);
 	
 
 
