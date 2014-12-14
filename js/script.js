@@ -81,7 +81,7 @@ $.getJSON('sites2.geojson',function(data){
 			console.log(data);
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
-		onEachFeature: helloThere
+		onEachFeature: bindPopups
 	}).addTo(map);  
 });
 
