@@ -20,7 +20,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
    	  $('#splash').fadeOut();
     }
   });
-  var myIcon = L.icon({
+ /* var myIcon = L.icon({
     iconUrl: 'img/computers.png',
     //shadowUrl: 'leaf-shadow.png',
 
@@ -85,7 +85,7 @@ $.getJSON('sites2.geojson',function(data){
 	}).addTo(map);  
 });
 
-function helloThere (feature,layer){
+/*function helloThere (feature,layer){
 	bindPopups(feature, layer);
 	
 	addMarkers (feature,layer);
