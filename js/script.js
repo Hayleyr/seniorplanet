@@ -166,7 +166,7 @@ $.getJSON('sites2.geojson',function(data){
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
 
-	onEachFeature: bindPopups;
+	onEachFeature: bindPopups,
     pointToLayer: function (feature, latlng) {
 				return L.circleMarker(latlng, {
 					radius: 4,
