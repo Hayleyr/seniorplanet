@@ -81,7 +81,7 @@ $.getJSON('sites2.geojson',function(data){
 			console.log(data);
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
-		onEachFeature: addMarkers
+		onEachFeature: bindPopups
 	}).addTo(map);  
 });
 
@@ -90,7 +90,7 @@ $.getJSON('sites2.geojson',function(data){
 	
 	addMarkers (feature,layer);
 }
-*/
+
 var marker = {
 		radius: 4,
 				
