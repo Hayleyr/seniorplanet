@@ -66,6 +66,8 @@ function bindPopups(feature, layer){
 			+ feature.properties.Website
 					+ "<br/><strong>Courses Offered:</strong> "
 						+ feature.properties.Courses
+								+ "<br/><strong>Council District:</strong> "
+									+ feature.properties.CD
 
 	);
 }
