@@ -54,7 +54,7 @@ function bindPopups(feature, layer){
 	//console.log(feature);
 	layer.bindPopup(
 		feature.properties.Site
-		+ "<br/><strong>Main Contact Person:</strong> "
+		+ "<br/><br/><strong>Main Contact Person:</strong> "
 		+ feature.properties.Person
 		+ "<br/><strong>Phone Number:</strong> "
 		+ feature.properties.Phone
@@ -63,6 +63,9 @@ function bindPopups(feature, layer){
 		+ "<br/><strong>Address:</strong> "
 		+ feature.properties.Address
 			+ "<br/><strong>Website:</strong> "
+			+ feature.properties.Website
+					+ "<br/><strong>Courses Offered:</strong> "
+						+ feature.properties.Courses
 
 	);
 }
@@ -77,6 +80,18 @@ $.getJSON('sites2.geojson',function(data){
 		onEachFeature: bindPopups
 	}).addTo(map);  
 });
+
+$.getJSON('Untitled.geojson',function(data){
+			console.log(data);
+			window.data = data;
+	var geojsonLayer = L.geoJson(data.features, {
+	
+	}).addTo(map);  
+});
+
+
+   
+
 
 /*function helloThere (feature,layer){
 	bindPopups(feature, layer);
