@@ -166,7 +166,7 @@ float:left;
 
 .logo {
 
-	float:left;
+	float:left !important;
 
 }
 
