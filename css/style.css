@@ -22,6 +22,9 @@ li {
 	width:49%;
 	float:left;
 }
+ul {
+	list-style-type:none;
+}
 
 .header {
 	margin:20px;
