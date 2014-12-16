@@ -14,6 +14,14 @@ li {
 		list-style-type:none;
 	text-decoration:none;
 }
+#half {
+	width:49%;
+	float:left;
+}
+#search {
+	width:49%;
+	float:left;
+}
 
 .header {
 	margin:20px;
