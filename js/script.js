@@ -115,6 +115,7 @@ $.getJSON('sites2.geojson',function(data){
 
 
        var geojsonLayer = L.geoJson(data.features, {
+       	bindPopup,
 
                pointToLayer: function (feature, latlng) {
                  console.log(feature);
