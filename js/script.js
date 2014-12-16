@@ -87,7 +87,7 @@ $.getJSON('sites2.geojson',function(data){
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
 		
-		onEachFeature: bindPopups
+		onEachFeature: bindPopups;
 		 pointToLayer: function (feature, latlng) {
  
       if (feature.property.PCC == "PCC") { geoJsonMarkerOptions.color = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
