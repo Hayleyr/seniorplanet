@@ -46,7 +46,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   
 
 
-//function GetIcon(d){if(d != null) {myIcon}}
+
 
 
 
@@ -74,13 +74,7 @@ function bindPopups(feature, layer){
 
 
 
-// function onEachFeature(feature, layer) {
-// 			layer.on({
-// 				mouseover: highlightFeature,
-// 				mouseout: resetHighlight,
-// 				click: zoomToFeature
-// 			});
-// 		}
+
 $.getJSON('councilDistv2.geojson',function(data){
 			console.log(data);
 			window.data = data;
@@ -115,7 +109,7 @@ $.getJSON('sites2.geojson',function(data){
 
 
        var geojsonLayer = L.geoJson(data.features, {
-       	bindPopup,
+       	onEachFeature:bindPopup, 
 
                pointToLayer: function (feature, latlng) {
                  console.log(feature);
