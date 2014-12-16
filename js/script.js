@@ -125,28 +125,32 @@ $.getJSON('councilDistv2.geojson',function(data){
 
 
 
-pointToLayer: function (feature, latlng) {
-				return L.circleMarker(latlng, {
-					radius: 4,
-				
-					color: "#000",
-					weight: 1,
-					opacity: 1,
-					fillOpacity: 0.8,
-					fillColor: getColor(feature.properties.PCC)
-				});
-			}
-  }).addTo(map);
-
-	function getColor(d) {			return d == "null" ? '#218282' :
-			       d == "PCC"  ? '#FF3300' :
-			     
-			       	                  '#eff3ff';
 		
+		var option1 = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+var option2 = {
+    radius: 8,
+    fillColor: "#575757",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+		L.geoJson(someGeojsonFeature, {
+   pointToLayer: function (feature, latlng) {
+       return L.circleMarker(latlng, geojsonMarkerOptions);
+      if (feature.property.PCC == "PCC") return option1
+      else (feature.property.PCC == "null") return option2
+      
+   }
+}).addTo(map);
 
-			   
-		
-		}
 
 
 
