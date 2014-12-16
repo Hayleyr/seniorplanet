@@ -110,12 +110,7 @@ $.getJSON('councilDistv2.geojson',function(data){
 				label: "${getLabel}"
 				
     }, 
-    context: {
-      
-      getLabel: function(feature) {
-        return feature.properties.CounDist;
-      }
-  }
+   
 	
 	}).addTo(map);  
 });
