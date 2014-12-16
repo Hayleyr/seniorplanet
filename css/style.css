@@ -13,6 +13,7 @@ a {
 li {
 		list-style-type:none;
 	text-decoration:none;
+	display:inline;
 }
 #half {
 	width:49%;
