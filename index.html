@@ -7,17 +7,30 @@
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <link rel="stylesheet" href="css/l.geosearch.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+ 
 
 </head>
 <body>
 
 
-<div class="header"><img class="logo" src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/logo.png" alt="Senior Planet: Aging with Attitude" width:"400px"><h1 class="title">Oats Technology Centers, NYC</h1></div>
+<div class="header"><img class=""logo" src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/logo.png" alt="Senior Planet: Aging with Attitude" width:"400px"><h1 class="title">Oats Technology Centers, NYC</h1></div>
 
 
+<div id="searchblock">
+                <form role='search' method="get" id="searchform" action="http://seniorplanet.org/">
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" class="search_input" value="Search site" name="s" id="s" onfocus="if (this.value == 'Search site') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search site';}" />
+	<input type="image" src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/button-search.png" id="searchsubmit" value="Search" />
+</form>
+                <ul id="share">
+            	<li><a href="http://facebook.com/seniorplanet" target="_blank"><img src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/facebook-sq.png" alt="Facebook" height="27"></a></li>
+                <li><a href="https://twitter.com/seniorplanet" target="_blank"><img src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/twitter-sq.png" alt="Twitter" height="27"></a></li>
+                <li><a href="http://pinterest.com/seniorplanet/" target="_blank"><img src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/pinterest-sq.png" alt="Pinterest" height="27"></a></li>
+                <li><a href="https://plus.google.com/104796451577077359358/" target="_blank"><img src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/icon_gplus.png" alt="Google Plus" height="27"></a></li>                
+                
+<li><a href="http://seniorplanet.tumblr.com/" target="_blank"><img src="http://seniorplanet.org/wp-content/themes/seniorplanet/images/tumblr-sq.jpg" alt="Tumblr" height="27"></a></li>                
+                </ul>
+            </div>
 
   <div id="map"></div>
 
