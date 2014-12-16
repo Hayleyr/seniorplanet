@@ -86,9 +86,7 @@ $.getJSON('sites2.geojson',function(data){
 			console.log(data);
 			window.data = data;
 	var geojsonLayer = L.geoJson(data.features, {
-		style:{
-			color: 'orange',
-		},
+		
 		onEachFeature: bindPopups
 	}).addTo(map);  
 });
@@ -126,29 +124,14 @@ $.getJSON('councilDistv2.geojson',function(data){
 
 
 		
-		var option1 = {
-    radius: 8,
-    fillColor: "#ff7800",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-};
-var option2 = {
-    radius: 8,
-    fillColor: "#575757",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-};
+	
 		L.geoJson(someGeojsonFeature, {
    pointToLayer: function (feature, latlng) {
        return L.circleMarker(latlng, geojsonMarkerOptions);
-      if (feature.property.PCC == "PCC") return option1
-      else (feature.property.PCC == "null") return option2
+      if (feature.property.PCC == "PCC") { geoJsonMarkerOptions.color = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
+      else (feature.property.PCC == "null") { geoJsonMarkerOptions.color = "#578324"; return L.circleMarker(latlng, geojsonMarkerOptions); }
       
-   }
+
 }).addTo(map);
 
 
