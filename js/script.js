@@ -115,25 +115,7 @@ $.getJSON('councilDistv2.geojson',function(data){
 	}).addTo(map);  
 });
 
-/*var geojsonLayer = L.geoJson(data.features,  {
-   pointToLayer: function (feature, latlng) {
- 
-      if (feature.property.PCC == "PCC") { geoJsonMarkerOptions.color = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
-      if (feature.property.PCC == "null") { geoJsonMarkerOptions.color = "#e3312b"; return L.circleMarker(latlng, geojsonMarkerOptions); }
-      
-   }
 
-}).addTo(map);
-
-
-
-
-
-
-
-
-
-});
 
 
 
