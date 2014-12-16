@@ -82,19 +82,29 @@ function bindPopups(feature, layer){
 // 			});
 // 		}
 
+
 $.getJSON('sites2.geojson',function(data){
-			console.log(data);
-			window.data = data;
-	var geojsonLayer = L.geoJson(data.features, {
-		
-		onEachFeature: bindPopups,
-		 pointToLayer: function (feature, latlng) {
- 
-      if (feature.properties.PCC == "PCC") { geoJsonMarkerOptions.color = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
-      if (feature.properties.PCC == "null") { geoJsonMarkerOptions.color = "#e3312b"; return L.circleMarker(latlng, geojsonMarkerOptions); }
-      
-   }
-	}).addTo(map);  
+       console.log(data);
+
+       var geojsonMarkerOptions = {
+               radius: 8,
+               fillColor: "#ff7800",
+               color: "#000",
+               weight: 1,
+               opacity: 1,
+               fillOpacity: 0.8
+       };
+
+
+       var geojsonLayer = L.geoJson(data.features, {
+
+               pointToLayer: function (feature, latlng) {
+                 console.log(feature);
+                       if (feature.properties.PCC == "PCC") { geojsonMarkerOptions.fillColor = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
+                       if (feature.properties.PCC == null) { geojsonMarkerOptions.fillColor = "#e3312b"; return L.circleMarker(latlng, geojsonMarkerOptions); }
+               }
+
+       }).addTo(map);  
 });
 
 // geojson = L.geoJson('councilDistv1.geojson' {
