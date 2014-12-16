@@ -81,6 +81,24 @@ function bindPopups(feature, layer){
 // 				click: zoomToFeature
 // 			});
 // 		}
+$.getJSON('councilDistv2.geojson',function(data){
+			console.log(data);
+			window.data = data;
+	var geojsonLayer = L.geoJson(data.features, {
+		style: {
+			weight: 2,
+				opacity: .5,
+				color: 'orange',
+				dashArray: '3',
+				fillColor: 'white',
+				fillOpacity: .01,
+				label: "${getLabel}"
+				
+    }, 
+   
+	
+	}).addTo(map);  
+});
 
 
 $.getJSON('sites2.geojson',function(data){
@@ -112,24 +130,6 @@ $.getJSON('sites2.geojson',function(data){
 // 			onEachFeature: onEachFeature
 // 		}).addTo(map);
 
-$.getJSON('councilDistv2.geojson',function(data){
-			console.log(data);
-			window.data = data;
-	var geojsonLayer = L.geoJson(data.features, {
-		style: {
-			weight: 2,
-				opacity: .5,
-				color: 'orange',
-				dashArray: '3',
-				fillColor: 'white',
-				fillOpacity: .01,
-				label: "${getLabel}"
-				
-    }, 
-   
-	
-	}).addTo(map);  
-});
 
 
 
