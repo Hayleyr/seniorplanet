@@ -242,9 +242,9 @@ h3 {
     font-weight: normal;
     font-style: normal;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #square {
-        width:50%;
+        width:48%;
         font-size:12px !important;
     }
 }
