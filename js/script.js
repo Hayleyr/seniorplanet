@@ -125,36 +125,7 @@ $.getJSON('councilDistv2.geojson',function(data){
 
 
 
-/*function helloThere (feature,layer){
-	bindPopups(feature, layer);
-	
-	addMarkers (feature,layer);
-}
-
-var marker = {
-		radius: 4,
-				
-		color: "#000",
-		weight: 1,
-				
-		fillOpacity: 0.8,
-		fillColor: 'red'
-}
-function addMarkers (feature, latlng){ 
-	console.log(data);
-
-	return L.circleMarker(latlng, marker).addTo(map);
-}
-	
-
-	
-
-
-
-
-
-    //onEachFeature: makeMarkers,
-   /* pointToLayer: function (feature, latlng) {
+pointToLayer: function (feature, latlng) {
 				return L.circleMarker(latlng, {
 					radius: 4,
 				
@@ -180,7 +151,7 @@ function addMarkers (feature, latlng){
 
 
 
-*/
+
 
 
 
