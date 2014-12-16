@@ -109,8 +109,15 @@ $.getJSON('councilDistv2.geojson',function(data){
 				dashArray: '3',
 				fillColor: 'white',
 				fillOpacity: .01,
+				label: "${getLabel}"
 				
-    }
+    }, 
+    context: {
+      
+      getLabel: function(feature) {
+        return feature.properties.CounDist;
+      }
+  }
 	
 	}).addTo(map);  
 });
