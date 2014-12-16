@@ -21,6 +21,17 @@ li {
 	width:80%;
 	margin:0px auto;
 }
+header #searchblock { float: right; text-align: right;}
+
+header ul#share { float: right; margin: 0; padding: 10px 0 0 0; list-style: none; }
+	header ul#share li { float: left; margin-left: 5px;}
+	#searchform { }
+
+	#searchform input[type="text"] { background: url('images/search-input-bg.png') no-repeat top left; width: 150px; height: 32px; border: none; padding-left: 20px; color: #888; font-weight: bold; float: left; }
+
+	#searchform input:focus {}
+	
+	#searchform #searchsubmit { width: 41px; height: 32px; border-left: 1px solid #ccc; }
 .footer {
 	width:80%;
 	  margin:0px auto;
