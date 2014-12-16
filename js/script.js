@@ -123,6 +123,7 @@ $.getJSON('councilDistv2.geojson',function(data){
       
 
 }).addTo(map);
+});
 
 
 
