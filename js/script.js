@@ -120,14 +120,6 @@ $.getJSON('councilDistv2.geojson',function(data){
 
 		
 	
-	/*	L.geoJson(someGeojsonFeature, {
-   pointToLayer: function (feature, latlng) {
-       return L.circleMarker(latlng, geojsonMarkerOptions);
-      if (feature.property.PCC == "PCC") { geoJsonMarkerOptions.color = "#575757"; return L.circleMarker(latlng, geojsonMarkerOptions); }
-      else (feature.property.PCC == "null") { geoJsonMarkerOptions.color = "#578324"; return L.circleMarker(latlng, geojsonMarkerOptions); 
-      
-
-}).addTo(map);
 
 
 
