@@ -244,7 +244,8 @@ h3 {
 }
 @media screen and (max-width: 450px) {
     #square {
-        width:48%;
+        width:47%;
+        float:left;
         font-size:12px !important;
     }
 }
