@@ -6,6 +6,19 @@ html,body {
   font-family: 'Raleway', sans-serif;
  
 }
+#sideBar{
+	
+	height: 800px;
+	width: 230px;
+	position: absolute;
+	float: fixed;
+	top: 0px;
+    right: 0px;
+
+	background: rgba(255, 255, 255, 0.85);
+	z-index: 1;
+	box-sizing: border-box;
+}
 a {
 	list-style-type:none;
 	text-decoration:none;
