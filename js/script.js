@@ -22,7 +22,8 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   });
   
   $( "#skip" ).click(function() {
-  $( "#mask" ).fadeOut( "slow", function() {
+  $( "#mask" ).fadeOut( "slow", function();
+  $('#splash').fadeOut() {
     // Animation complete.
   });
 });
