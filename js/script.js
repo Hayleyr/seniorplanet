@@ -47,6 +47,25 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 
 
 //function GetIcon(d){if(d != null) {myIcon}}
+var info = L.control();
+
+		info.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info');
+			this.update();
+			return this._div;
+		};
+
+		info.update = function (props) {
+			this._div.innerHTML = '<h6>(roll over the map)</h6>'
+			 	+ '<h4>number of centers per council district</h4>' + (props ? 
+				'<b><h1>' + props.pedestrians2_Crashes + '</h1></b><br />'
+				+ props.pedestrians2_Borough + ' '
+				+ props.pedestrians2_Date + ' '
+				: ' ')
+					+ '<h4>number of centers per council district</h4>' ;
+		};
+
+		info.addTo(map);
 
 
 
