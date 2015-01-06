@@ -19,7 +19,14 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
       $('#mask').fadeOut();
    	  $('#splash').fadeOut();
     }
-  });
+  }
+  $('#skip').onclick(function(e){
+   
+      $('#mask').fadeOut();
+   	  $('#splash').fadeOut();
+    }
+  
+  );
  /* var myIcon = L.icon({
     iconUrl: 'img/computers.png',
     //shadowUrl: 'leaf-shadow.png',
