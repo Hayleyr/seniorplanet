@@ -69,7 +69,7 @@ $( "#skip" ).click(function() {
 
 
 
-function bindPopups(feature, layer){
+function bindPopup(feature, layer){
 	//console.log(feature);
 	layer.bindPopup(
 		feature.properties.Site
@@ -128,7 +128,7 @@ $.getJSON('sites2.geojson',function(data){
 
 
        var geojsonLayer = L.geoJson(data.features, {
-       onEachFeature: bindPopups,
+       onEachFeature: bindPopup,
 
                pointToLayer: function (feature, latlng) {
                  console.log(feature);
