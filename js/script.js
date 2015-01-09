@@ -126,7 +126,7 @@ $.getJSON('sites2.geojson',function(data){
                fillOpacity: 0.8
        };
 
-
+/*
        var geojsonLayer = L.geoJson(data.features, {
        onEachFeature: bindPopups,
 
