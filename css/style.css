@@ -8,11 +8,11 @@ html,body {
 }
 #sidebar{
 	
-	height: 800px;
+	height: 480px;
 	width: 230px;
 	position: absolute;
 	float: fixed;
-	top: 0px;
+	top: 240px;
     right: 0px;
 
 	background: rgba(255, 255, 255, 0.85);
@@ -56,12 +56,22 @@ ul {
 	  margin:0px auto;
 
 }
+#skip {
+	height: 20px !important;
+	font-size: 12px !important;
+	border-radius: 7px !important;
+
+	display: block !important;
+	padding: 0px 10px !important;
+	background-color:white !important;
+	font-family:'Raleway';
+}
 
 .square4 {
 
     background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
     display:block;
-  width:23.5%;
+  width:23%;
     height:280px;
     background-size:cover;
     float:left;
@@ -91,7 +101,7 @@ background-image:none;
 
     background-image: url('http://ww1.prweb.com/prfiles/2013/03/06/10503817/ipad%20class.jpg');
      display:block;
-  width:23.7%;
+  width:23%;
     height:280px;
     background-size:cover;
     float:left;
@@ -109,7 +119,7 @@ background-image:none;
 	font-size:18px;
 
 	float:left;
-	  width:23.7%;
+	  width:23%;
   
    height:280px;
    text-align:center;
@@ -126,7 +136,7 @@ background-image:none;
 	font-size:18px;
 
 	float:left;
-	  width:23.7%;
+	  width:20%;
   
    height:280px;
    text-align:center;
@@ -144,13 +154,14 @@ background-image:none;
 
 
 }
+
 .square3 {
 	background-color:#575757;
 	padding:10px;
 	font-size:18px;
 
 	float:left;
-  width:23.7%;
+  width:23.6%;
     height:280px;
     text-align:center;
 }
@@ -214,7 +225,7 @@ padding-top:40px;
 }
 
 h2 {
-	font-size:48px;
+	font-size:36px;
 	color:white;
 
 
@@ -267,6 +278,9 @@ h3 {
 	z-index: 20;
 	border-radius: 13px;
 	padding: 20px;
+}
+p {
+	font-size:16px;
 }
 
 
