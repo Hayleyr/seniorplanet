@@ -88,7 +88,7 @@ function bindPopups(feature, layer){
 								+ "<br/><strong>Council District:</strong> "
 									+ feature.properties.CD
 
-}).addTo(map);
+	);
 }
 
 
@@ -113,6 +113,7 @@ $.getJSON('councilDistv2.geojson',function(data){
   
 });
 
+
 $.getJSON('sites2.geojson',function(data){
        console.log(data);
 
@@ -123,7 +124,9 @@ $.getJSON('sites2.geojson',function(data){
                weight: 1,
                opacity: 1,
                fillOpacity: 0.8
-       };
+       }
+	
+});
 
 
        var geojsonLayer = L.geoJson(data.features, {
