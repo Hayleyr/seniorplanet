@@ -88,7 +88,7 @@ function bindPopups(feature, layer){
 								+ "<br/><strong>Council District:</strong> "
 									+ feature.properties.CD
 
-	);
+}).addTo(map);
 }
 
 
