@@ -110,7 +110,7 @@ $.getJSON('councilDistv2.geojson',function(data){
     }, 
    
 	
-	}).addTo(map);  
+  
 });
 
 
@@ -126,9 +126,9 @@ $.getJSON('sites2.geojson',function(data){
                fillOpacity: 0.8
        }
 	
-}).addTo(map); 
+});
 
-/*
+
        var geojsonLayer = L.geoJson(data.features, {
        onEachFeature: bindPopups,
 
