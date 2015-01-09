@@ -110,7 +110,7 @@ $.getJSON('councilDistv2.geojson',function(data){
     }, 
    
 	
-  
+	}).addTo(map);  
 });
 
 
@@ -124,9 +124,7 @@ $.getJSON('sites2.geojson',function(data){
                weight: 1,
                opacity: 1,
                fillOpacity: 0.8
-       }
-	
-});
+       };
 
 
        var geojsonLayer = L.geoJson(data.features, {
@@ -140,7 +138,6 @@ $.getJSON('sites2.geojson',function(data){
 
        }).addTo(map);  
 });
-
 // geojson = L.geoJson('councilDistv1.geojson' {
 // 			style: style,
 // 			onEachFeature: onEachFeature
