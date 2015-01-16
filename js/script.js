@@ -13,6 +13,19 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 
   }).addTo(map);
 
+  $( "#skip" ).click(function() {
+      getSites();
+  $( "#mask" ).fadeOut( "slow", function() {
+    // Animation complete.
+  });
+});
+$( "#skip" ).click(function() {
+    getSites();
+  $( "#splash" ).fadeOut( "slow", function() {
+    // Animation complete.
+  });
+});
+
   $('#searchAddress').keypress(function(e){
     geoSearch._onKeyUp(e);
     if(e.charCode==13) {
@@ -21,17 +34,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
    	  $('#splash').fadeOut();
     }
   });
-  
-  $( "#skip" ).click(function() {
-  $( "#mask" ).fadeOut( "slow", function() {
-    // Animation complete.
-  });
-});
-$( "#skip" ).click(function() {
-  $( "#splash" ).fadeOut( "slow", function() {
-    // Animation complete.
-  });
-});
+ 
  /* $('#skip').onclick(function(e){
    
       $('#mask').fadeOut();
@@ -88,6 +91,8 @@ function bindPopups(feature, layer){
 						+ feature.properties.Courses
 								+ "<br/><strong>Council District:</strong> "
 									+ feature.properties.CD
+                  + "<br/><strong>Public Computer Center?:</strong> "
+                  + feature.properties.PCC
 
 	);
 }
@@ -110,12 +115,13 @@ $.getJSON('councilDistv2.geojson',function(data){
 				
     }, 
 
+
  onEachFeature: 
 
                function (feature, layer) {
                  layer.on('mouseover', function(e){
                   distNum = feature.properties.CounDist;
-                  $('#sidebar').text ('District Number: ' + distNum);
+                  $('#sidebar').text ('Council District Number: ' + distNum);
 
                  }); 
                  layer.on('mouseout', function(e){
@@ -128,6 +134,8 @@ $.getJSON('councilDistv2.geojson',function(data){
                       
                }
 
+
+
    
 	
 	});
@@ -135,6 +143,9 @@ $.getJSON('councilDistv2.geojson',function(data){
    
   geojsonLayer.addTo(map);  
 });
+
+
+
 
 
 
@@ -164,6 +175,7 @@ $.getJSON('sites2.geojson',function(data){
        }).addTo(map);  
 });
 }
+
 
 // geojson = L.geoJson('councilDistv1.geojson' {
 // 			style: style,
