@@ -8,20 +8,40 @@ html,body {
 }
 #sidebar{
 	
-	height: 480px;
-	width: 230px;
+	height: 100px;
+	width: 400px;
 	position: absolute;
 	float: fixed;
-	top: 240px;
-    right: 0px;
+	top: 255px;
+    left: 1020px;
 
-	background: rgba(255, 255, 255, 0.85);
+	background: rgba(255, 255, 255, 0.9);
 	z-index: 1;
 	box-sizing: border-box;
+	padding:20px;
+	font-size:34px !important;
+	text-align:center;
 }
 a {
 	list-style-type:none;
 	text-decoration:none;
+}
+.legend {
+			text-align: left;
+			line-height: 18px;
+			color: #555;
+			background-color:white;
+			width:200px;
+			height:200px;
+			opacity: 0.7;
+			padding:20px;
+			border-radius: 7px !important;
+		}
+		.legend .circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
 }
 li {
 		list-style-type:none;
@@ -203,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .leaflet-popup-content-wrapper {
-background: #e3312b !important;
+background-color: rgba(255, 10, 0, 0.8) !important; 
 box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 color: white !important;
 padding:20px;
@@ -290,6 +310,7 @@ p {
         float:left;
         font-size:12px !important;
     }
+   
 }
 
 
