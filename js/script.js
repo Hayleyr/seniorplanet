@@ -16,6 +16,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   $('#searchAddress').keypress(function(e){
     geoSearch._onKeyUp(e);
     if(e.charCode==13) {
+      getSites();
       $('#mask').fadeOut();
    	  $('#splash').fadeOut();
     }
@@ -69,8 +70,8 @@ $( "#skip" ).click(function() {
 
 
 
-function bindPopup(feature, layer){
-	//console.log(feature);
+function bindPopups(feature, layer){
+	console.log('binding + popup');
 	layer.bindPopup(
 		feature.properties.Site
 		+ "<br/><br/><strong>Main Contact Person:</strong> "
@@ -108,12 +109,36 @@ $.getJSON('councilDistv2.geojson',function(data){
 				label: "${getLabel}"
 				
     }, 
+
+ onEachFeature: 
+
+               function (feature, layer) {
+                 layer.on('mouseover', function(e){
+                  distNum = feature.properties.CounDist;
+                  $('#sidebar').text ('District Number: ' + distNum);
+
+                 }); 
+                 layer.on('mouseout', function(e){
+                
+                  $('#sidebar').text ('Hover over a district!');
+
+                 }); 
+
+
+                      
+               }
+
    
 	
-	}).addTo(map);  
+	});
+  
+   
+  geojsonLayer.addTo(map);  
 });
 
 
+
+function getSites () {
 $.getJSON('sites2.geojson',function(data){
        console.log(data);
 
@@ -128,7 +153,7 @@ $.getJSON('sites2.geojson',function(data){
 
 
        var geojsonLayer = L.geoJson(data.features, {
-       onEachFeature: bindPopup,
+       onEachFeature: bindPopups,
 
                pointToLayer: function (feature, latlng) {
                  console.log(feature);
@@ -138,6 +163,8 @@ $.getJSON('sites2.geojson',function(data){
 
        }).addTo(map);  
 });
+}
+
 // geojson = L.geoJson('councilDistv1.geojson' {
 // 			style: style,
 // 			onEachFeature: onEachFeature
@@ -156,6 +183,7 @@ $.getJSON('sites2.geojson',function(data){
 
 		
 	
+
 
 
 
