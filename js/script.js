@@ -76,7 +76,7 @@ $( "#skip" ).click(function() {
 function bindPopups(feature, layer){
 	console.log('binding + popup');
 	layer.bindPopup(
-		<div id="popuptitle">feature.properties.Site</div>
+		feature.properties.Site
 		+ "<br/><br/><strong>Main Contact Person:</strong> "
 		+ feature.properties.Person
 		+ "<br/><strong>Phone Number:</strong> "
