@@ -114,6 +114,7 @@ ul {
     background-size:cover;
     float:left;
     padding:10px !important;
+    border-radius:7px;
 
 }
 .square2 #text2 {
