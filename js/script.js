@@ -35,37 +35,7 @@ $( "#skip" ).click(function() {
     }
   });
  
- /* $('#skip').onclick(function(e){
-   
-      $('#mask').fadeOut();
-   	  $('#splash').fadeOut();
-    }
-    
-  
-  
- /* var myIcon = L.icon({
-    iconUrl: 'img/computers.png',
-    //shadowUrl: 'leaf-shadow.png',
 
-    iconSize:     [32, 37], // size of the icon
-    shadowSize:   [51, 37], // size of the shadow
-    iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
- 
-
-//L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
-
- /*  pointToLayer: function (feature, latlng) {
-				return L.Icon(latlng) {
-				
-					Icon: GetIcon(feature.properties.PCC)
-				});
-			}
- }).addTo(map);
- */
- 
   
 
 
@@ -175,12 +145,6 @@ $.getJSON('sites2.geojson',function(data){
        }).addTo(map);  
 });
 }
-
-
-// geojson = L.geoJson('councilDistv1.geojson' {
-// 			style: style,
-// 			onEachFeature: onEachFeature
-// 		}).addTo(map);
 
 
 
