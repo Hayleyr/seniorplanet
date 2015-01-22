@@ -18,6 +18,7 @@ html,body {
 	background: rgba(255, 255, 255, 0.9);
 	z-index: 1;
 	box-sizing: border-box;
+	border-radius:7px !important;
 	padding:20px;
 	font-size:34px !important;
 	text-align:center;
@@ -41,12 +42,7 @@ a {
 			padding:20px;
 			border-radius: 7px !important;
 		}
-		.legend .circle {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-top: 8px;
-}
+		
 li {
 		list-style-type:none;
 	text-decoration:none;
@@ -90,35 +86,29 @@ ul {
 	background-color:white !important;
 	font-family:'Raleway';
 }
-
-.square4 {
-
-    background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
-    display:block;
-  width:23%;
-    height:280px;
-    background-size:cover;
-    float:left;
-    padding:10px !important;
-    text-align:center;
-}
-
-.square4:hover {
-    background-color:#F0D318;
-background-image:none;
+.square1 {
+	background-color:#F0D318;
+	padding:10px;
 	font-size:18px;
-	padding:10px !important;
 
-
-	
-
+	float:left;
+	  width:20%;
+  
+   height:280px;
    text-align:center;
 }
-.square4 #text {
-	display:none;
+
+.square1:hover {
+	background-image: url('http://seniorplanet.org/wp-content/uploads/2013/04/Senior-Planet-iPad-class.jpg');
+		background-color:#F0D318;
+		background-size:cover;
+
+
+
 }
-.square4:hover #text {
-	display:block;
+.square1:hover #text {
+	display:none;
+
 
 }
 .square2 {
@@ -154,29 +144,16 @@ background-image:none;
 .square2:hover #text2 {
 	display:block;
 }
-.square1 {
-	background-color:#F0D318;
-	padding:10px;
-	font-size:18px;
+.square4 {
 
-	float:left;
-	  width:20%;
-  
-   height:280px;
-   text-align:center;
-}
-.square1:hover {
-	background-image: url('http://seniorplanet.org/wp-content/uploads/2013/04/Senior-Planet-iPad-class.jpg');
-		background-color:#F0D318;
-		background-size:cover;
-
-
-
-}
-.square1:hover #text {
-	display:none;
-
-
+    background-image: url('http://seniorplanet.org/wp-content/uploads/2012/12/Senior-Planet-Exploration-Center2.jpg');
+    display:block;
+  width:23%;
+    height:280px;
+    background-size:cover;
+    float:left;
+    padding:10px !important;
+    text-align:center;
 }
 
 .square3 {
@@ -196,6 +173,28 @@ background-size:cover;
 .square3:hover #text {
 	display: none;
 }
+
+.square4:hover {
+    background-color:#F0D318;
+background-image:none;
+	font-size:18px;
+	padding:10px !important;
+
+
+	
+
+   text-align:center;
+}
+.square4 #text {
+	display:none;
+}
+.square4:hover #text {
+	display:block;
+
+}
+
+
+
 
 .title {
 
